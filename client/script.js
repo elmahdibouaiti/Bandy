@@ -85,8 +85,8 @@ const handleSubmit = async (e) => {
 
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
-    
-    const response = await fetch('https://bandy.onrender.com/', {
+    console.log({messageDiv});
+    const response = await fetch('https://bandy.onrender.com', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
